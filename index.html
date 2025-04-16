@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<!-- saved from url=(0431)https://prd-felo-meet.s3.ap-northeast-1.amazonaws.com/search-ext-index-file/html/177b053b-d2a6-48b8-9b35-750d0d0aa927/6efb5fea-74fe-414e-b765-97f478fab26e.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250416T055319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=AKIA5M4ISMZHSPSGEVS5%2F20250416%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Signature=f14f39b707095060a9f3269d607286c95b2504d4d586d661d72feb4c3d5a8f29 -->
+<html lang="zh-TW" class="light scroll-smooth">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025 臺灣資安大會 - CTF 高中生導覽</title>
+    <meta
+      name="description"
+      content="2025 臺灣資安大會（CYBERSEC 2025）對正在學習 CTF 的高中生，必看導覽指南"
+    />
+    <link rel="stylesheet" href="./assets/all.min.css" />
+    <link rel="stylesheet" href="./assets/material-icons.min.css" />
+    <script src="./assets/saved_resource"></script>
+    <script src="./assets/chart.umd.min.js.下載"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#f0f9ff",
+                100: "#e0f2fe",
+                200: "#bae6fd",
+                300: "#7dd3fc",
+                400: "#38bdf8",
+                500: "#0ea5e9",
+                600: "#0284c7",
+                700: "#0369a1",
+                800: "#075985",
+                900: "#0c4a6e",
+                950: "#082f49",
+              },
+              secondary: {
+                50: "#f5f3ff",
+                100: "#ede9fe",
+                200: "#ddd6fe",
+                300: "#c4b5fd",
+                400: "#a78bfa",
+                500: "#8b5cf6",
+                600: "#7c3aed",
+                700: "#6d28d9",
+                800: "#5b21b6",
+                900: "#4c1d95",
+                950: "#2e1065",
+              },
+            },
+            fontFamily: {
+              sans: ["Noto Sans TC", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .btn-hover {
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .btn-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .card-hover {
+        transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        border-color: rgba(14, 165, 233, 0.5);
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #c5c5c5;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a3a3a3;
+      }
+
+      .dark ::-webkit-scrollbar-track {
+        background: #1e1e1e;
+      }
+
+      .dark ::-webkit-scrollbar-thumb {
+        background: #4a4a4a;
+      }
+
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #5a5a5a;
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/tw.css" />
+    <style id="chromane_style">
+      body.chromane_rec_nofollow_link_highlighting_enabled a[rel*="nofollow"] {
+        margin-right: 8px;
+        margin-left: 8px;
+        outline: 2px dotted black !important;
+        outline-offset: 2px !important;
+      }
+
+      body.chromane_rec_sponsored_link_highlighting_enabled
+        a[rel*="sponsored"] {
+        margin-right: 8px;
+        margin-left: 8px;
+        outline: 2px dotted black !important;
+        outline-color: black;
+        outline-offset: 2px !important;
+      }
+
+      body.chromane_rec_ugc_link_highlighting_enabled a[rel*="ugc"] {
+        margin-right: 8px;
+        margin-left: 8px;
+        outline: 2px dotted black !important;
+        outline-offset: 2px !important;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 font-sans"
+  >
+    <!-- 頂部導航欄 -->
+    <header
+      class="sticky top-0 z-50 w-full backdrop-blur-lg bg-white/90 dark:bg-gray-900/90 border-b border-gray-200 dark:border-gray-700 transition-all duration-300"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center space-x-2">
+            <i
+              class="fa-solid fa-shield-halved text-primary-600 dark:text-primary-400 text-2xl"
+            ></i>
+            <h1 class="text-lg font-bold">CYBERSEC 2025</h1>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button
+              id="theme-toggle"
+              class="p-2 rounded-lg text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+            >
+              <span id="dark-icon" class="hidden dark:inline-block"
+                ><i class="fa-solid fa-moon"></i
+              ></span>
+              <span id="light-icon" class="inline-block dark:hidden"
+                ><i class="fa-solid fa-sun"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 主橫幅 -->
+    <section
+      class="relative bg-gradient-to-r from-primary-600 to-secondary-700 dark:from-primary-800 dark:to-secondary-900 py-16 overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute inset-0 bg-[url(&#39;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMjIiIGZpbGwtb3BhY2l0eT0iLjMiPjxwYXRoIGQ9Ik0zNiAxOGMxLjIgMCAyLjQtLjIgMy41LS42TDQwIDAgNjAgMjBsLTMxLjUgMzEuNXYtMjUuN2MtMS4yLS43LTIuNS0xLjEtNC0xLjEtNC4xIDAtNy41IDMuNC03LjUgNy41UzIwLjkgNDAgMjUgNDB2MjBMMCAyNVYwbDE1IDE1di0uNWMwLTkuMSA3LjQtMTYuNSAxNi41LTE2LjVoMy42bC42LjZ6Ii8+PC9nPjwvZz48L3N2Zz4=&#39;)]"
+        ></div>
+      </div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg"
+          >
+            2025 臺灣資安大會
+          </h1>
+          <p class="text-xl md:text-2xl text-white/90 mb-8">必看導覽</p>
+          <div class="bg-white/20 backdrop-blur-md rounded-lg p-4 inline-block">
+            <p class="text-white font-semibold">
+              給復興與數實學生的參觀指南
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 主要內容 -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- 導覽總覽 -->
+      <section class="mb-16 fade-in" style="opacity: 1">
+        <div
+          class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 p-6 md:p-8 card-hover"
+        >
+          <h2
+            class="text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center"
+          >
+            <i
+              class="fa-solid fa-compass mr-3 text-primary-600 dark:text-primary-400"
+            ></i>
+            導覽總覽
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:px-custom gap-6">
+            <div
+              class="bg-gray-50 dark:bg-gray-850/50 rounded-xl p-5 border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 transition cursor-pointer"
+              onclick="window.scrollTo({top: document.querySelector('#cyber-talent').offsetTop-80, behavior: 'smooth',})"
+            >
+              <h3
+                class="text-lg font-semibold mb-3 flex items-center dark:text-gray-700"
+              >
+                <i
+                  class="fa-solid fa-graduation-cap text-secondary-600 dark:text-secondary-500 mr-2"
+                ></i>
+                Cyber Talent 資安人才培訓專區
+              </h3>
+              <p class="text-gray-600 dark:text-gray-500">
+                連結大會的龐大資安人才庫 強化企業數位韌性與資安專才
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-50 dark:bg-gray-850/50 rounded-xl p-5 border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 transition cursor-pointer"
+              onclick="window.scrollTo({top: document.querySelector('#special-area').offsetTop-80, behavior: 'smooth',})"
+            >
+              <h3
+                class="text-lg font-semibold mb-3 flex items-center dark:text-gray-700"
+              >
+                <i
+                  class="fa-solid fa-users-gear text-secondary-600 dark:text-secondary-500 mr-2"
+                ></i>
+                特色場館
+              </h3>
+              <p class="text-gray-600 dark:text-gray-500">
+                大會還設有臺灣資安館以及 AIoT & Hardware Security
+                Zone，實現跨領域、跨產業協作聯防，打造更強大、更堅韌的數位未來。
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-50 dark:bg-gray-850/50 rounded-xl p-5 border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 transition cursor-pointer"
+              onclick="window.scrollTo({top: document.querySelector('#bussiness').offsetTop-80, behavior: 'smooth',})"
+              >
+              <h3
+                class="text-lg font-semibold mb-3 flex items-center dark:text-gray-700"
+              >
+                <i
+                  class="fa-solid fa-building text-secondary-600 dark:text-secondary-500 mr-2"
+                ></i>
+                展攤活動交流
+              </h3>
+              <p class="text-gray-600 dark:text-gray-500">
+                超過 400
+                家資安品牌精心設計展攤活動與技術演示，提供與專家輕鬆互動的機會，讓您現場吸收滿滿的資安市場資訊！
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-50 dark:bg-gray-850/50 rounded-xl p-5 border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 transition cursor-pointer"
+              onclick="window.scrollTo({top: document.querySelector('#session').offsetTop-80, behavior: 'smooth',})"
+              >
+              <h3
+                class="text-lg font-semibold mb-3 flex items-center dark:text-gray-700"
+              >
+                <i
+                  class="fa-solid fa-calendar-days text-secondary-600 dark:text-secondary-500 mr-2"
+                ></i>
+                推薦議程
+              </h3>
+              <p class="text-gray-600 dark:text-gray-500">
+                各種好讚的課程、演講！
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 主要內容區塊 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- 左側 - 場館與推薦要去看的廠商 -->
+        <div class="space-y-8">
+          <!-- Cyber Talent 資安人才專區 -->
+          <section
+            class="fade-in"
+            style="animation-delay: 0.2s; opacity: 1"
+            id="cyber-talent"
+          >
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden card-hover"
+            >
+              <div class="p-6 md:p-8">
+                <h2
+                  class="text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center"
+                >
+                  <i
+                    class="fa-solid fa-user-shield mr-3 text-primary-600 dark:text-primary-400"
+                  ></i>
+                  Cyber Talent 資安人才專區（4 樓）
+                </h2>
+
+                <div class="space-y-6">
+                  <div class="flex flex-col md:flex-row md:items-start gap-5">
+                    <div
+                      class="flex-shrink-0 bg-primary-100 dark:bg-primary-900/50 w-12 h-12 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fab fa-fort-awesome text-primary-600 dark:text-primary-400 text-2xl"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold mb-2">
+                        CT02 攤位：ISIP 教育部先進資通安全人才培育計畫
+                      </h3>
+                      <p class="text-gray-600 dark:text-gray-400 mb-3">
+                        朝拜，不解釋。
+                        <i class="fa-solid fa-person-praying dark-"></i>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col md:flex-row md:items-start gap-5">
+                    <div
+                      class="flex-shrink-0 bg-primary-100 dark:bg-primary-900/50 w-12 h-12 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fab fa-centos text-primary-600 dark:text-primary-400 text-2xl"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold mb-2">
+                        CT01 攤位：國家資通安全研究院
+                      </h3>
+                      <p class="text-gray-600 dark:text-gray-400 mb-3">
+                        了解最新關於高中生可以參加活動內容。
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col md:flex-row md:items-start gap-5">
+                    <div
+                      class="flex-shrink-0 bg-primary-100 dark:bg-primary-900/50 w-12 h-12 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fa-solid fa-stamp text-primary-600 dark:text-primary-400 text-2xl"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold mb-2">
+                        CT03 攤位：ACAD 安碁學苑股份有限公司
+                      </h3>
+                      <p class="text-gray-600 dark:text-gray-400 mb-3">
+                        了解關於證照考試相關資訊。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 必逛展區：臺灣資安館 -->
+          <section class="fade-in" style="animation-delay: 0.2s; opacity: 1" id="special-area">
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden card-hover"
+            >
+              <div class="p-6 md:p-8">
+                <h2
+                  class="text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center"
+                >
+                  <i
+                    class="fa-solid fa-user-shield mr-3 text-primary-600 dark:text-primary-400"
+                  ></i>
+                  臺灣資安館（4 樓）
+                </h2>
+                <h2
+                  class="text-xl font-bold text-gray-800 dark:text-white mb-6 flex items-center"
+                >
+                  你一定要關注的重點：
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div
+                    class="flex flex-col md:flex-row md:items-start gap-5 border border-gray-200 rounded-md p-2"
+                  >
+                    <div
+                      class="flex-shrink-0 bg-primary-100 dark:bg-primary-900/50 w-12 h-12 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fab fa-freebsd text-primary-600 dark:text-primary-400 text-2xl"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold mb-2">AI 資安應用</h3>
+                      <ol
+                        class="text-gray-600 dark:text-gray-400 mb-3 pl-6 pr-2 list-outside list-decimal"
+                      >
+                        <li>目前在 AI 資安應用有哪些方法可以進行防護？</li>
+                        <li>臺灣有哪些廠商在做相關的資安防護應用？</li>
+                      </ol>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col md:flex-row md:items-start gap-5 border border-gray-200 rounded-md p-2"
+                  >
+                    <div
+                      class="flex-shrink-0 bg-primary-100 dark:bg-primary-900/50 w-12 h-12 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fab fa-fulcrum text-primary-600 dark:text-primary-400 text-2xl"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold mb-2">次世代通訊資安</h3>
+                      <ol
+                        class="text-gray-600 dark:text-gray-400 mb-3 pl-6 pr-2 list-outside list-decimal"
+                      >
+                        <li>什麼是「次世代通訊」？跟現有的通訊差在哪裡？</li>
+                        <li>為什麼需要發展「次世代通訊的資安」？</li>
+                      </ol>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col md:flex-row md:items-start gap-5 border border-gray-200 rounded-md p-2"
+                  >
+                    <div
+                      class="flex-shrink-0 bg-primary-100 dark:bg-primary-900/50 w-12 h-12 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fab fa-optin-monster text-primary-600 dark:text-primary-400 text-2xl"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold mb-2">
+                        關鍵基礎設施資安
+                      </h3>
+                      <ol
+                        class="text-gray-600 dark:text-gray-400 mb-3 pl-6 pr-2 list-outside list-decimal"
+                      >
+                        <li>
+                          臺灣有哪些重要的關鍵基礎設施？多少比例受到資安攻擊？
+                        </li>
+                        <li>最重要的防護機制與方法是什麼？</li>
+                      </ol>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col md:flex-row md:items-start gap-5 border border-gray-200 rounded-md p-2"
+                  >
+                    <div
+                      class="flex-shrink-0 bg-primary-100 dark:bg-primary-900/50 w-12 h-12 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fab fa-critical-role text-primary-600 dark:text-primary-400 text-2xl"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold mb-2">軍工資安</h3>
+                      <ol
+                        class="text-gray-600 dark:text-gray-400 mb-3 pl-6 pr-2 list-outside list-decimal"
+                      >
+                        <li>近 10 年來，軍工資安的發展歷程。</li>
+                        <li>為什麼會往這樣的發展方向邁進？</li>
+                      </ol>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col md:flex-row md:items-start gap-5 border border-gray-200 rounded-md p-2 col-span-2"
+                  >
+                    <div
+                      class="flex-shrink-0 bg-primary-100 dark:bg-primary-900/50 w-12 h-12 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fab fa-btc text-primary-600 dark:text-primary-400 text-2xl"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold mb-2">資安精品獎</h3>
+                      <ol
+                        class="text-gray-600 dark:text-gray-400 mb-3 pl-6 pr-2 list-outside list-decimal"
+                      >
+                        <li>為何被稱為「精品」？</li>
+                        <li>
+                          產品最重要是解決問題，但是為什麼會發現這些問題要被解決？
+                        </li>
+                        <li>問題解決方案是如何研究、發想的？</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-6 bg-primary-50 dark:bg-primary-900/30 rounded-2xl shadow-sm border border-primary-200 dark:border-primary-800 p-6"
+                >
+                  <div
+                    class="flex flex-col md:flex-row items-start md:items-center gap-4"
+                  >
+                    <div
+                      class="bg-primary-100 dark:bg-primary-800/50 rounded-full p-3"
+                    >
+                      <i
+                        class="fa-solid fa-bell text-primary-700 dark:text-primary-300 text-xl"
+                      ></i>
+                    </div>
+                    <div>
+                      <h3
+                        class="text-xl font-semibold text-primary-800 dark:text-primary-300 mb-2"
+                      >
+                        記得參加深度導覽資訊
+                      </h3>
+                      <p class="text-primary-700 dark:text-primary-400">
+                        可以拿好看的杯子
+                        <i class="fa-solid fa-face-kiss-wink-heart"></i>
+                      </p>
+                    </div>
+                    <div class="ml-auto">
+                      <a
+                        href="https://cybersec.ithome.com.tw/2025/cyberTaiwanPavilion#ctp-guide"
+                        class="inline-block px-5 py-2.5 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition btn-hover"
+                      >
+                        查看場次資訊
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 必逛展區：AIoT & Hardware Security Zone -->
+          <section class="fade-in" style="animation-delay: 0.2s; opacity: 1">
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden card-hover"
+            >
+              <div class="p-6 md:p-8">
+                <h2
+                  class="text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center"
+                >
+                  <i
+                    class="fa-solid fa-user-shield mr-3 text-primary-600 dark:text-primary-400"
+                  ></i>
+                  AIoT & Hardware Security Zone（4 樓）
+                </h2>
+                <h2
+                  class="text-xl font-bold text-gray-800 dark:text-white mb-6 flex items-center"
+                >
+                  你一定要關注的重點：
+                </h2>
+
+                <div
+                  class="flex flex-col md:flex-row md:items-start gap-5 rounded-md p-2 col-span-2"
+                >
+                  <div
+                    class="flex-shrink-0 bg-primary-100 dark:bg-primary-900/50 w-12 h-12 rounded-lg flex items-center justify-center"
+                  >
+                    <i
+                      class="fab fa-osi text-primary-600 dark:text-primary-400 text-2xl"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold mb-2">關鍵技術</h3>
+                    <ol
+                      class="text-gray-600 dark:text-gray-400 mb-3 pl-6 list-outside list-decimal"
+                    >
+                      <li>有哪些 AIoT 目前的安全關鍵技術？</li>
+                      <li>有哪些技術跟硬體會比較有關聯？</li>
+                      <li>有哪些技術跟軟體會比較有關連？</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 推薦要去看的廠商 -->
+          <section class="fade-in" style="animation-delay: 0.3s; opacity: 1" id="bussiness">
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <h2
+                  class="text-2xl font-bold text-gray-800 dark:text-white mb-5 flex items-center"
+                >
+                  <i
+                    class="fa-solid fa-building-user mr-3 text-primary-600 dark:text-primary-400"
+                  ></i>
+                  廠商攤位一覽（1 樓）
+                </h2>
+
+                <div class="space-y-4">
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <a
+                        href="https://cybersec.ithome.com.tw/2025/exhibition-page/2741"
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200 underline mr-2"
+                      >
+                        DEVCORE
+                      </a>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        紅隊演練
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        1樓 P106
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        創立於 2012 年，DEVCORE
+                        戴夫寇爾堅信，唯有了解真實的駭客思維與攻擊方式，才能改善資訊安全與防護觀念。如今
+                        DEVCORE
+                        透過更全面的方式，大幅提升客戶的資訊安全防護能量及應對能力，讓企業能以最有效的方式配置資源。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #一定要去
+                      </div>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #有獎品的活動
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <a
+                        href="https://cybersec.ithome.com.tw/2025/exhibition-page/2851"
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200 underline mr-2"
+                      >
+                        TRAPA Security
+                      </a>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        藍隊演練
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        1樓 P101
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        TRAPA Security
+                        由四位擁有豐富資訊安全經驗的專家所創立，其攻擊與防禦相關的實務經驗為
+                        TRAPA Security
+                        帶來強大的資安能量。鑒於網路攻擊不斷進化，企業和政府不斷遭受各種網路威脅，TRAPA
+                        Security
+                        致力於結合自身強大技術，幫助企業提升資安實力，降低因資安事件所帶來的損失，同時填補資安人才缺口。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #一定要去
+                      </div>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #筆很好用
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <a
+                        href="https://cybersec.ithome.com.tw/2025/exhibition-page/2704"
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200 underline mr-2"
+                      >
+                        叡揚資訊
+                      </a>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        藍隊演練
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        1樓 C106
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        叡揚資訊成立於 1987
+                        年，是台灣資訊軟體業的領導廠商，於應用系統開發逾 30
+                        多年經驗，以改善資訊安全、提高企業效能為使命，全方位引進國際前瞻領導性知名品牌，致力為各大企業及組織提供
+                        DevOps
+                        應用程式安全解決方案、顧問及整合服務，目標打造提供台灣企業良好的資安平台，優質服務累積廣大的客戶群，包含醫療業、政府國營事業、金融業、壽險業、電信業、交通運輸業、製造業、高科技業等等。未來也將持續引進國際頂尖資安資訊及技術，協助客戶有效提升應用系統安全強度，建立堅強資安防線。期許透過卓越的軟體與服務，帶領客戶透過
+                        IT 創新提升企業產能及核心競爭力。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #跟學校有合作
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <a
+                        href="https://cybersec.ithome.com.tw/2025/exhibition-page/2613"
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200 underline mr-2"
+                      >
+                        N-Partner 新夥伴科技
+                      </a>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        流量分析
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        1樓 C222
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        N-Partner 成立於 2011
+                        年，總部位於臺中；專長於高效能大數據蒐集、儲存與分析領域，及人工智慧分析技術的解決方案及應用服務。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #之前學校的網路流量紀錄儀是這家的
+                      </div>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #送超讚的電腦包(但不知道還有沒有)
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <a
+                        href="https://cybersec.ithome.com.tw/2025/exhibition-page/2583"
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200 underline mr-2"
+                      >
+                        奧義智慧
+                      </a>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        很多東西
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        1樓 P201
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        奧義智慧科技 (CyCraft Technology) 是一家專注於 AI
+                        自動化技術的資安科技公司，研發自動化威脅曝險管理平台「XCockpit」，整合「端點偵測與回應」、「身份攻擊面管理」、「外部攻擊面管理」三大防禦構面，提供一站式的全方位自動化資安防護。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #很多人去實習
+                      </div>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #跟 ISIP 關係不錯
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <a
+                        href="https://cybersec.ithome.com.tw/2025/exhibition-page/2600"
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200 underline mr-2"
+                      >
+                        TeamT5 杜浦數位安全
+                      </a>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        紅隊演練
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        1樓 Q112
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        TeamT5
+                        杜浦數位安全專精研究網路攻擊、資安威脅，由專家團隊提供完整的資安防禦與應變服務，藉由威脅情資平台與全時監控的防勒索
+                        EDR，為企業提供有效的資安防禦。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #很厲害的地方
+                      </div>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #也有很多實習
+                      </div>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #有活動可以參加
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <a
+                        href="https://cybersec.ithome.com.tw/2025/exhibition-page/2622"
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200 underline mr-2"
+                      >
+                        Cymetrics 新加坡商甯寶數位科技有限公司台灣分公司
+                      </a>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        資安維護
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        1樓 C230
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        Cymetrics 提供即時資安評估及紅隊演練服務，透過專屬的
+                        SaaS
+                        技術與領先市場的資安情報，強化企業的網路防禦能力。此外，也與集團旗下另一品牌
+                        Vulcan 合作推出 GenAI
+                        漏洞檢測和防禦工具，確保資安、安全性和合規無虞。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #傳說中的huli大大在這
+                      </div>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #你不知道huli是誰沒關係
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <a
+                        href="https://cybersec.ithome.com.tw/2025/exhibition-page/2704"
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200 underline mr-2"
+                      >
+                        中華資安國際股份有限公司
+                      </a>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        資安維運
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        1樓 C222
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        中華資安國際為國內資安專業服務公司領導品牌，擁有多年資安攻防實戰經驗，團隊取得
+                        ISO 27001、ISO 27701、ISO 20000、與 ISO 17025、IEC 62443
+                        CBTL
+                        等認證，更是國內唯一連續五年獲得行政院資安服務廠商評鑑五項資安服務全數「A
+                        級」之優質資安服務公司
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #中華電信子公司
+                      </div>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-secondary-100 dark:bg-secondary-900/50 text-red-600 dark:text-red-300 rounded text-xs"
+                      >
+                        #養老就是目標到這工作
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center py-2">
+                    <a
+                      href="https://cybersec.ithome.com.tw/2025/exhibitionDirectory"
+                      class="text-primary-600 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-300 text-sm font-medium transition"
+                    >
+                      查看更多廠商 <i class="fa-solid fa-chevron-down ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- 右側 - 推薦議程 -->
+        <div class="space-y-8">
+          <!-- 推薦議程一覽 -->
+          <section class="fade-in" style="animation-delay: 0.3s; opacity: 1" id="session">
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden card-hover"
+            >
+              <div class="p-6 md:p-8">
+                <h2
+                  class="text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center"
+                >
+                  <i
+                    class="fa-solid fa-calendar-day mr-3 text-primary-600 dark:text-primary-400"
+                  ></i>
+                  必看議程
+                </h2>
+
+                <div class="space-y-4">
+                  <!-- 議程 1 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3487"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          駭客變主人，GenAI 聽錯指令搞事情
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 09:30 - 10:00 | 1F 展區會議室 1B
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        了解生成式AI的安全漏洞與風險，學習如何防範提示詞注入攻擊，對於未來AI應用開發至關重要。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        AI安全
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 議程 2 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3602"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          流量加密也沒用？以阻斷攻擊拿下整片衛星RCE ;)
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 09:30 - 10:00 | 1F 展區會議室 1A
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        深入探討即使在加密環境下的攻擊可能性，了解遠端程式碼執行漏洞，對於理解網路安全的深層次挑戰非常有幫助。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        網路攻防進階
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 議程 3 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3500"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          針對台灣產業資安威脅：分析從釣魚郵件入侵的全過程
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 09:30 - 10:00 | 4F 展區會議室 4B
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        了解釣魚郵件攻擊的實際案例及完整攻擊鏈，對於防範社交工程攻擊和建立基本資安意識非常有價值。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        社交工程
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 議程 4 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3477"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          紅隊勇者的證照冒險攻略
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 10:00 - 10:30 | 4F Cyber Talent 專區
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        對有志從事資安紅隊的學生提供清晰的證照路徑規劃，讓學生了解如何系統性地建立攻擊技能。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        職涯發展
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 議程 5 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3631"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          透過 LLM AI 自動分析並提取攻擊資訊達到漏洞預防
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 10:15 - 10:45 | 1F 展區會議室 1B
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        了解大型語言模型在安全分析中的實際應用，對於想了解AI與資安結合的學生來說是難得的前沿技術展示。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        AI資安應用
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 議程 6 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3469"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          資安人才證照趨勢與需求分析
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 10:30 - 10:40 | 4F Cyber Talent 專區
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        掌握產業最新人才需求趨勢，幫助學生規劃未來學習路徑，對於即將進入職場的學生尤其重要。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        職涯規劃
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 議程 7 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3814"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          駭客的鬥法大賽 - 從 HITCON CTF 到 HITCON Cyber Range
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 11:30 - 12:15 | 4F Cyber Talent 專區
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        了解國際級CTF比賽的進階技術與挑戰，對有興趣參與駭客競賽的學生是絕佳的學習機會。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        CTF競賽
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 議程 8 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3527"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          資安小白看過來~資安職涯起手式，資安證照與故事
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 14:00 - 14:30 | 4F Cyber Talent 專區
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        對資安領域完全陌生的學生的最佳入門指南，提供實際案例和經驗分享，降低學習門檻。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        入門指南
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 議程 9 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3478"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          從 HR 的觀點看資安證照的潛力與價值
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 15:45 - 16:15 | 4F Cyber Talent 專區
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        從企業招聘角度了解資安證照的實際市場價值，幫助學生規劃更有競爭力的職涯發展策略。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        職涯規劃
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 議程 10 -->
+                  <div
+                    class="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden"
+                  >
+                    <div
+                      class="bg-gray-50 dark:bg-gray-750/40 px-4 py-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <h3
+                        class="text-base font-semibold text-gray-800 dark:text-gray-200"
+                      >
+                        <a
+                          href="https://cybersec.ithome.com.tw/2025/session-page/3614"
+                          class="text-blue-600 dark:text-blue-300 hover:underline"
+                        >
+                          以戰代訓 - 透過攻防不斷進化資安團隊
+                        </a>
+                      </h3>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        4 月 17 日（四）| 16:15 - 17:00 | 7F 701E
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        了解實戰演練在資安團隊建設中的重要性，對希望了解企業資安運作模式的學生有極高參考價值。
+                      </p>
+                      <div
+                        class="inline-block px-2.5 py-0.5 bg-primary-100 dark:bg-primary-900/50 text-primary-800 dark:text-primary-300 rounded text-xs"
+                      >
+                        企業資安
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- 底部資訊 -->
+    <footer
+      class="bg-white dark:bg-gray-850 border-t border-gray-200 dark:border-gray-800 py-8 mt-12"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <div class="flex items-center space-x-2">
+              <i
+                class="fa-solid fa-shield-halved text-primary-600 dark:text-primary-400 text-xl"
+              ></i>
+              <h2 class="text-lg font-bold text-gray-800 dark:text-gray-200">
+                2025 臺灣資安大會
+              </h2>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">
+              給復興及數實學生的必看導覽
+            </p>
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-500 mt-3">
+            © 2025 FHSH MIS 版權所有
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript 功能 -->
+    <script src="./assets/preline.min.js.下載"></script>
+    <script>
+      // 深色模式切換
+      const themeToggleBtn = document.getElementById("theme-toggle");
+
+      // 檢查系統偏好
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.documentElement.classList.add("dark");
+      }
+
+      // 切換主題
+      themeToggleBtn.addEventListener("click", function () {
+        document.documentElement.classList.toggle("dark");
+      });
+
+      // CTF 技能比例圖
+      const ctfSkillsChart = new Chart(
+        document.getElementById("ctfSkillsChart"),
+        {
+          type: "pie",
+          data: {
+            labels: [
+              "Web 安全",
+              "二進制分析",
+              "密碼學",
+              "逆向工程",
+              "網路安全",
+              "IoT/設備安全",
+            ],
+            datasets: [
+              {
+                data: [25, 20, 15, 20, 10, 10],
+                backgroundColor: [
+                  "rgba(14, 165, 233, 0.7)",
+                  "rgba(139, 92, 246, 0.7)",
+                  "rgba(249, 115, 22, 0.7)",
+                  "rgba(16, 185, 129, 0.7)",
+                  "rgba(234, 88, 12, 0.7)",
+                  "rgba(236, 72, 153, 0.7)",
+                ],
+                borderColor: [
+                  "rgba(14, 165, 233, 1)",
+                  "rgba(139, 92, 246, 1)",
+                  "rgba(249, 115, 22, 1)",
+                  "rgba(16, 185, 129, 1)",
+                  "rgba(234, 88, 12, 1)",
+                  "rgba(236, 72, 153, 1)",
+                ],
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: "bottom",
+                labels: {
+                  padding: 20,
+                  color: document.documentElement.classList.contains("dark")
+                    ? "#e5e7eb"
+                    : "#4b5563",
+                },
+              },
+              tooltip: {
+                callbacks: {
+                  label: function (context) {
+                    return context.label + ": " + context.parsed + "%";
+                  },
+                },
+              },
+            },
+          },
+        }
+      );
+
+      // 當主題切換時更新圖表顏色
+      themeToggleBtn.addEventListener("click", function () {
+        const isDark = document.documentElement.classList.contains("dark");
+        ctfSkillsChart.options.plugins.legend.labels.color = isDark
+          ? "#e5e7eb"
+          : "#4b5563";
+        ctfSkillsChart.update();
+      });
+
+      // 淡入效果
+      document.addEventListener("DOMContentLoaded", function () {
+        const fadeElements = document.querySelectorAll(".fade-in");
+        fadeElements.forEach(function (el, index) {
+          setTimeout(function () {
+            el.style.opacity = "1";
+          }, 100 * index);
+        });
+      });
+    </script>
+
+    <div id="ookdjilphngeeeghgngjabigmpepanpl"></div>
+  </body>
+  <rq-implicit-test-rule-widget
+    class="rq-element"
+    draggable="true"
+    style="display: none"
+    ><template shadowrootmode="closed">
+      <style>
+        :host {
+          position: fixed !important;
+          z-index: 2147483647 !important;
+          top: 16px;
+          right: 16px;
+        }
+
+        #container {
+          border-radius: 1rem;
+          padding: 12px 1rem;
+          display: flex;
+          flex-direction: column;
+          color: #fff;
+          font-family: system-ui;
+          background: #1a1a1a;
+          box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.16),
+            0px 16px 32px 0px rgba(0, 0, 0, 0.24);
+          border: 1px solid #5c5b5b;
+          cursor: move;
+          width: 420px;
+          transition: all 0.2s;
+          position: relative;
+          overflow-x: hidden;
+        }
+
+        #container.minimized {
+          width: fit-content;
+          height: 56px;
+          padding: 6px;
+          border-radius: 20px;
+        }
+
+        #container.minimized #test-rule-container,
+        #container.minimized #heading-container,
+        #container.minimized #info-container {
+          display: none;
+        }
+
+        #rule-name {
+          font-size: 12px;
+          margin: 4px 0;
+          font-weight: bolder;
+          line-height: 1.4;
+          max-width: 290px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        #heading-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 4px;
+        }
+
+        #logo-container {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        #heading-container div {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-content: center;
+        }
+
+        #actions-container {
+          display: flex;
+          flex-direction: row;
+          gap: 4px;
+        }
+
+        #actions-container button {
+          width: 32px;
+          height: 32px;
+          background: none;
+          border: none;
+          color: #fff;
+          transition: all 0.2s;
+          cursor: pointer;
+          border-radius: 4px;
+          padding: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+        }
+
+        #actions-container #close-button svg {
+          width: 10px;
+          height: 10px;
+        }
+
+        #actions-container button:hover {
+          background: #383838;
+        }
+
+        #explicit-widget-container {
+          background: #282828;
+          border-radius: 8px;
+          padding: 12px;
+          margin-top: 8px;
+        }
+
+        #implicit-widget-container {
+          padding: 0 4px;
+          margin-top: 8px;
+        }
+
+        #rule-status-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        #test-rule-details {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 4px;
+        }
+
+        #info-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 6px;
+          margin-top: 8px;
+        }
+
+        #info-icon {
+          align-self: flex-start;
+        }
+
+        #rule-status-comment {
+          align-self: center;
+        }
+
+        #heading-logo {
+          height: 16px;
+          width: 16px;
+        }
+
+        #logo-text {
+          color: #fff;
+          font-size: 11px;
+          font-weight: 500;
+        }
+
+        #view-result-btn {
+          all: unset;
+          background: #1e69ff;
+          color: #fff;
+          border-radius: 4px;
+          padding: 4px 12px;
+          font-size: 12px;
+        }
+
+        #view-result-btn:hover {
+          cursor: pointer;
+          border-color: #0f4cd9;
+          background: #0f4cd9;
+        }
+
+        #rule-status {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+          gap: 4px;
+        }
+
+        #rule-applied-status,
+        #rule-not-applied-status {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          letter-spacing: 1px;
+          font-size: 10px;
+          font-weight: 500;
+          margin-top: -3px;
+        }
+
+        #rule-applied-status {
+          color: #28c07a;
+        }
+
+        #rule-not-applied-status {
+          color: #e09400;
+        }
+
+        #minimized-details {
+          display: none;
+          pointer-events: none;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          gap: 3px;
+        }
+
+        #minimized-details.visible {
+          display: flex;
+          pointer-events: auto;
+        }
+
+        #minimized-logo svg {
+          height: 16px;
+          width: 16px;
+        }
+
+        #test-rule-minimized-btn {
+          padding: 0;
+          background: transparent;
+          border: none;
+        }
+
+        #test-rule-minimized-btn span {
+          padding: 6px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        #test-rule-minimized-btn span svg {
+          height: 20px;
+          width: 20px;
+        }
+
+        .secondary-text {
+          font-size: 11px;
+          color: #b0b0b5b3;
+        }
+
+        .hidden {
+          display: none !important;
+        }
+
+        a {
+          color: #9370db;
+        }
+
+        .warning {
+          background: #5c3111;
+        }
+
+        .success {
+          background: #104b2f;
+        }
+
+        #applied-rules-list {
+          margin-top: 8px;
+          max-height: 200px;
+          overflow-y: auto;
+          padding-right: 4px;
+        }
+
+        #applied-rules-list::-webkit-scrollbar {
+          width: 8px;
+          background: transparent;
+        }
+
+        #applied-rules-list::-webkit-scrollbar-thumb {
+          background: #353535;
+          border-radius: 8px;
+        }
+
+        #applied-rules-list-header {
+          font-size: 13px;
+          color: #fff;
+          font-weight: 500;
+        }
+
+        .applied-rule-list-item {
+          border-radius: 8px;
+          background: #282828;
+          padding: 12px;
+          color: #fff;
+          font-size: 13px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          margin-top: 8px;
+          cursor: pointer;
+          transition: all 0.2s;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .applied-rule-list-item:hover {
+          background: #383838;
+        }
+
+        .applied-rule-list-item:hover .applied-rule-arrow-icon {
+          opacity: 1;
+        }
+
+        .applied-rule-list-item:first-child {
+          margin-top: 0;
+        }
+
+        .applied-rule-item-details {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .applied-rule-icon {
+          align-self: center;
+        }
+
+        .applied-rule-icon svg {
+          width: 14px;
+          height: 14px;
+          position: relative;
+          top: 2px;
+        }
+
+        .applied-rule-arrow-icon {
+          transform: scale(1.2);
+          align-self: center;
+          transition: 0.2s all;
+          opacity: 0;
+        }
+
+        .applied-rule-name {
+          max-width: 300px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        #settings-button {
+          position: relative;
+        }
+
+        #settings-button[data-tooltip]:hover::after {
+          content: attr(data-tooltip);
+
+          position: absolute;
+          z-index: 1;
+          right: 0px;
+          top: 34px;
+          width: 158px;
+          max-width: 232px;
+          padding: 6px 12px;
+          color: #fff;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          border-radius: 4px;
+          background: #000;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.16);
+        }
+
+        .test-rule-widget-progress-bar {
+          height: 6px;
+          background: #3c7ff3;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          transition: width 5s linear;
+        }
+      </style>
+      <div id="container">
+        <div id="minimized-details">
+          <div id="minimized-logo">
+            <svg
+              width="251"
+              height="251"
+              viewBox="0 0 251 251"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M124.408 245.868V188.238C104.504 188.529 82.7544 186.943 60.1611 182.339L60.0545 182.235V216.575C60.0545 223.437 60.7942 228.978 62.2736 233.201C63.7529 237.423 65.8487 240.722 68.5609 243.097C71.5197 245.472 75.0949 247.055 79.2864 247.847C83.7246 248.903 88.7791 249.43 94.4501 249.43C100.121 249.43 105.792 249.035 111.463 248.243C117.381 247.451 121.695 246.66 124.408 245.868Z"
+                fill="white"
+              ></path>
+              <path
+                d="M124.408 169.866H127.147C152.451 169.356 180.05 165.599 203.571 154.848L203.554 154.824C214.403 148.49 223.773 139.518 231.663 127.906C239.553 116.295 243.498 102.308 243.498 85.9467C243.498 59.821 234.868 39.1052 217.609 23.7992C200.349 8.4932 174.707 0.84021 140.681 0.84021C128.106 0.84021 116.271 1.6319 105.176 3.21527C94.0803 4.53475 84.341 6.77789 75.9578 9.94465C71.0266 11.7919 67.0816 14.2989 64.1228 17.4657C61.4106 20.3685 60.0545 24.5909 60.0545 30.1327V96.5095C71.3817 98.242 114.382 101.954 124.038 101.543V57.8418C126.75 57.314 129.216 56.9182 131.435 56.6543C133.654 56.3904 136.612 56.2584 140.311 56.2584C153.379 56.2584 162.871 58.8974 168.789 64.1753C174.953 69.1893 178.035 76.7103 178.035 86.7384C178.035 96.7664 175.323 104.419 169.899 109.697C164.474 114.711 157.077 117.218 147.708 117.218H124.038V117.008C123.974 117.109 123.915 117.21 123.861 117.313C87.9797 115.588 66.1922 114.066 60.0404 113.204L60.0399 113.194L42.9936 111.502C41.4373 111.348 40.2998 109.961 40.4529 108.404L41.3754 99.0229C41.6423 96.3086 38.2948 94.8199 36.4615 96.8375L0.888601 135.986C-0.0859492 137.058 -0.0924867 138.694 0.873451 139.776L29.4492 171.786C31.0921 173.627 34.1369 172.635 34.3782 170.181L35.0406 163.445C35.2015 161.809 36.7162 160.655 38.336 160.934L60.0545 164.671V164.802L60.1611 164.695C73.4489 166.933 97.4782 170.207 124.408 169.908V169.866Z"
+                fill="white"
+              ></path>
+              <path
+                d="M175.076 223.305L153.644 186.439C181.486 183.412 203.494 177.208 215.783 172.246C220.496 178.807 225.172 185.139 229.813 191.241C238.443 202.589 245.224 212.881 250.155 222.117C247.689 231.354 243.128 238.479 236.471 243.493C230.06 248.243 222.786 250.618 214.65 250.618C209.225 250.618 204.541 249.958 200.596 248.639C196.651 247.319 193.199 245.472 190.24 243.097C187.281 240.722 184.569 237.819 182.103 234.388C179.638 230.958 177.295 227.263 175.076 223.305Z"
+                fill="white"
+              ></path>
+            </svg>
+          </div>
+          <button id="test-rule-minimized-btn">
+            <span class="success"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_2834_1705"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="16"
+                  height="16"
+                >
+                  <rect width="16" height="16" fill="#D9D9D9"></rect>
+                </mask>
+                <g mask="url(#mask0_2834_1705)">
+                  <path
+                    d="M7.13333 10.4833L11.1667 6.46667L10.2 5.5L7.13333 8.56667L5.76667 7.2L4.81667 8.16667L7.13333 10.4833ZM8 14.5333C7.1 14.5333 6.25 14.3667 5.45 14.0333C4.66111 13.6889 3.96667 13.2222 3.36667 12.6333C2.77778 12.0333 2.31111 11.3389 1.96667 10.55C1.63333 9.75 1.46667 8.9 1.46667 8C1.46667 7.08889 1.63333 6.23889 1.96667 5.45C2.31111 4.66111 2.77778 3.97222 3.36667 3.38333C3.96667 2.78333 4.66111 2.31667 5.45 1.98333C6.25 1.63889 7.1 1.46667 8 1.46667C8.91111 1.46667 9.76111 1.63889 10.55 1.98333C11.3389 2.31667 12.0278 2.78333 12.6167 3.38333C13.2167 3.97222 13.6833 4.66111 14.0167 5.45C14.3611 6.23889 14.5333 7.08889 14.5333 8C14.5333 8.9 14.3611 9.75 14.0167 10.55C13.6833 11.3389 13.2167 12.0333 12.6167 12.6333C12.0278 13.2222 11.3389 13.6889 10.55 14.0333C9.76111 14.3667 8.91111 14.5333 8 14.5333ZM8 13.15C9.43333 13.15 10.65 12.65 11.65 11.65C12.65 10.65 13.15 9.43333 13.15 8C13.15 6.56667 12.65 5.35 11.65 4.35C10.65 3.35 9.43333 2.85 8 2.85C6.56667 2.85 5.35 3.35 4.35 4.35C3.35 5.35 2.85 6.56667 2.85 8C2.85 9.43333 3.35 10.65 4.35 11.65C5.35 12.65 6.56667 13.15 8 13.15Z"
+                    fill="#28C07A"
+                  ></path>
+                </g></svg
+            ></span>
+          </button>
+        </div>
+        <div id="heading-container">
+          <div id="logo-container">
+            <span id="heading-logo"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M7.98439 15.6591V11.9822C6.71565 12.0008 5.32921 11.8996 3.88899 11.6058L3.8822 11.5992V13.7902C3.8822 14.2279 3.92935 14.5815 4.02366 14.8509C4.11796 15.1203 4.25156 15.3307 4.42445 15.4823C4.61305 15.6338 4.84095 15.7348 5.10814 15.7853C5.39105 15.8527 5.71325 15.8864 6.07475 15.8864C6.43625 15.8864 6.79774 15.8611 7.15924 15.8106C7.53645 15.7601 7.8115 15.7096 7.98439 15.6591Z"
+                  fill="url(#paint0_linear_2826_2722)"
+                ></path>
+                <path
+                  d="M7.98439 10.81H8.15909C9.77207 10.7775 11.5313 10.5378 13.0307 9.85185L13.0296 9.85029C13.7212 9.4462 14.3184 8.87374 14.8214 8.13291C15.3243 7.39208 15.5758 6.49972 15.5758 5.45582C15.5758 3.78896 15.0257 2.46725 13.9255 1.4907C12.8253 0.514153 11.1907 0.0258789 9.02172 0.0258789C8.22015 0.0258789 7.46572 0.0763902 6.75845 0.177412C6.05117 0.261597 5.43035 0.404713 4.89596 0.606758C4.58162 0.724617 4.33014 0.884567 4.14154 1.08661C3.96865 1.27182 3.8822 1.54121 3.8822 1.89479V6.12974C4.60426 6.24028 7.34528 6.47711 7.96081 6.45089V3.66268C8.1337 3.629 8.29087 3.60375 8.43233 3.58691C8.57378 3.57008 8.76239 3.56166 8.99815 3.56166C9.83116 3.56166 10.4363 3.73003 10.8135 4.06677C11.2064 4.38667 11.4029 4.86653 11.4029 5.50633C11.4029 6.14614 11.23 6.63442 10.8842 6.97116C10.5384 7.29106 10.0669 7.45101 9.46966 7.45101H7.96081V7.43758C7.95673 7.44399 7.95296 7.45048 7.94952 7.45705C5.66229 7.347 4.27345 7.24991 3.8813 7.19488L3.88127 7.19426L2.79467 7.08629C2.69546 7.07644 2.62295 6.98802 2.63269 6.88881L2.69152 6.29001C2.70853 6.11695 2.49506 6.02204 2.37823 6.15072L0.11053 8.64856C0.0484818 8.71691 0.0480731 8.82113 0.109583 8.89009L1.93123 10.9325C2.03594 11.0499 2.2301 10.9867 2.24547 10.8302L2.28772 10.4002C2.29797 10.2959 2.39452 10.2223 2.49778 10.2401L3.8822 10.4785V10.4869L3.88899 10.4801C4.73603 10.6229 6.26777 10.8318 7.98439 10.8127V10.81Z"
+                  fill="url(#paint1_linear_2826_2722)"
+                ></path>
+                <path
+                  d="M11.2143 14.2195L9.8481 11.8674C11.6229 11.6743 13.0258 11.2785 13.8091 10.9619C14.1095 11.3805 14.4076 11.7844 14.7035 12.1738C15.2536 12.8978 15.6858 13.5544 16.0002 14.1437C15.843 14.733 15.5522 15.1876 15.1279 15.5075C14.7192 15.8106 14.2556 15.9621 13.7369 15.9621C13.3911 15.9621 13.0925 15.92 12.841 15.8359C12.5895 15.7517 12.3695 15.6338 12.1809 15.4823C11.9923 15.3307 11.8194 15.1455 11.6622 14.9267C11.505 14.7078 11.3557 14.4721 11.2143 14.2195Z"
+                  fill="url(#paint2_linear_2826_2722)"
+                ></path>
+                <path
+                  d="M0.0637207 8.77344C0.0645556 8.81521 0.0798203 8.85677 0.109546 8.8901L1.93119 10.9325C2.03591 11.0499 2.23006 10.9867 2.24543 10.8302L2.28769 10.4002C2.29793 10.2959 2.39449 10.2223 2.49774 10.2401L3.88216 10.4785V10.4869L3.88896 10.4801C4.73599 10.6229 6.26774 10.8318 7.98435 10.8127V10.81H8.01892V9.21903L0.0637207 8.77344Z"
+                  fill="url(#paint3_linear_2826_2722)"
+                ></path>
+                <path
+                  d="M8.01896 9.21922L0.0637569 8.77363C0.0628642 8.72897 0.0784679 8.68408 0.11053 8.64876L2.37823 6.15092C2.49506 6.02224 2.70853 6.11715 2.69152 6.29021L2.63269 6.88901C2.62295 6.98822 2.69546 7.07664 2.79467 7.08649L3.88127 7.19446L3.8813 7.19508C4.27345 7.2501 5.66229 7.3472 7.94952 7.45725C7.95296 7.45068 7.95673 7.44419 7.96081 7.43778V7.45121H8.01896V9.21922Z"
+                  fill="url(#paint4_linear_2826_2722)"
+                ></path>
+                <defs>
+                  <lineargradient
+                    id="paint0_linear_2826_2722"
+                    x1="3.76992"
+                    y1="-1.50587"
+                    x2="13.212"
+                    y2="19.2702"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#1EA0FF"></stop>
+                    <stop offset="1" stop-color="#004EEB"></stop>
+                  </lineargradient>
+                  <lineargradient
+                    id="paint1_linear_2826_2722"
+                    x1="3.76992"
+                    y1="-1.50587"
+                    x2="13.212"
+                    y2="19.2702"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#1EA0FF"></stop>
+                    <stop offset="1" stop-color="#004EEB"></stop>
+                  </lineargradient>
+                  <lineargradient
+                    id="paint2_linear_2826_2722"
+                    x1="3.76992"
+                    y1="-1.50587"
+                    x2="13.212"
+                    y2="19.2702"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#1EA0FF"></stop>
+                    <stop offset="1" stop-color="#004EEB"></stop>
+                  </lineargradient>
+                  <lineargradient
+                    id="paint3_linear_2826_2722"
+                    x1="11.8972"
+                    y1="9.83355"
+                    x2="5.27078"
+                    y2="8.10349"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#1EA0FF"></stop>
+                    <stop offset="1" stop-color="#004EEB"></stop>
+                  </lineargradient>
+                  <lineargradient
+                    id="paint4_linear_2826_2722"
+                    x1="2.63345"
+                    y1="4.98671"
+                    x2="14.7158"
+                    y2="6.53243"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#1EA0FF"></stop>
+                    <stop offset="1" stop-color="#004EEB"></stop>
+                  </lineargradient>
+                </defs></svg
+            ></span>
+            <span id="logo-text">requestly</span>
+          </div>
+          <div id="actions-container">
+            <button
+              id="settings-button"
+              class=""
+              data-tooltip="Hide widget in app settings"
+            >
+              <svg
+                width="16"
+                height="13"
+                viewBox="0 0 16 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.6167 6.91667L9.58333 5.88333C9.62778 5.46111 9.5 5.1 9.2 4.8C8.9 4.48889 8.53889 4.35556 8.11667 4.4L7.08333 3.36667C7.22778 3.31111 7.37778 3.27222 7.53333 3.25C7.68889 3.21667 7.84444 3.2 8 3.2C8.77778 3.2 9.43889 3.47222 9.98333 4.01667C10.5278 4.56111 10.8 5.22222 10.8 6C10.8 6.15556 10.7833 6.31111 10.75 6.46667C10.7278 6.62222 10.6833 6.77222 10.6167 6.91667ZM12.8333 9.13333L11.9667 8.26667C12.3667 7.95556 12.7278 7.61667 13.05 7.25C13.3833 6.87222 13.6611 6.45556 13.8833 6C13.3389 4.87778 12.5333 4 11.4667 3.36667C10.4111 2.72222 9.25556 2.4 8 2.4C7.71111 2.4 7.42778 2.41667 7.15 2.45C6.87222 2.48333 6.6 2.53889 6.33333 2.61667L5.36667 1.65C5.78889 1.48333 6.21667 1.36667 6.65 1.3C7.09444 1.23333 7.54444 1.2 8 1.2C9.58889 1.2 11.0389 1.63333 12.35 2.5C13.6722 3.35556 14.6222 4.52222 15.2 6C14.9556 6.63333 14.6278 7.21111 14.2167 7.73333C13.8167 8.24444 13.3556 8.71111 12.8333 9.13333ZM12.8 12.5L10.6333 10.3333C10.2111 10.4889 9.77778 10.6056 9.33333 10.6833C8.9 10.7611 8.45556 10.8 8 10.8C6.41111 10.8 4.95556 10.3722 3.63333 9.51667C2.32222 8.65 1.37778 7.47778 0.800001 6C1.04444 5.36667 1.36667 4.78889 1.76667 4.26667C2.16667 3.74444 2.63333 3.27222 3.16667 2.85L1.5 1.18333L2.35 0.333334L13.65 11.65L12.8 12.5ZM4.01667 3.71667C3.62778 4.02778 3.26667 4.37222 2.93333 4.75C2.6 5.11667 2.32778 5.53333 2.11667 6C2.66111 7.12222 3.46111 8.00556 4.51667 8.65C5.58333 9.28333 6.74444 9.6 8 9.6C8.28889 9.6 8.57222 9.58333 8.85 9.55C9.12778 9.50556 9.40556 9.45 9.68333 9.38333L8.93333 8.63333C8.77778 8.68889 8.62222 8.73333 8.46667 8.76667C8.31111 8.78889 8.15556 8.8 8 8.8C7.22222 8.8 6.56111 8.52778 6.01667 7.98333C5.47222 7.43889 5.2 6.77778 5.2 6C5.2 5.84444 5.21667 5.68889 5.25 5.53333C5.29445 5.37778 5.33333 5.22222 5.36667 5.06667L4.01667 3.71667Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </button>
+            <button id="minimize-button" class="hidden">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_2826_2732"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="16"
+                  height="16"
+                >
+                  <rect width="16" height="16" fill="#D9D9D9"></rect>
+                </mask>
+                <g mask="url(#mask0_2826_2732)">
+                  <path
+                    d="M6.27083 4.75L8.5 6.95833V5.27083H10V9.5H5.75V8H7.4375L5.22917 5.79167L6.27083 4.75ZM13.75 14C13.125 14 12.5903 13.7847 12.1458 13.3542C11.7153 12.9097 11.5 12.375 11.5 11.75C11.5 11.125 11.7153 10.5972 12.1458 10.1667C12.5903 9.72222 13.125 9.5 13.75 9.5C14.375 9.5 14.9028 9.72222 15.3333 10.1667C15.7778 10.5972 16 11.125 16 11.75C16 12.375 15.7778 12.9097 15.3333 13.3542C14.9028 13.7847 14.375 14 13.75 14ZM1.5 14C1.08333 14 0.729167 13.8542 0.4375 13.5625C0.145833 13.2708 1.78814e-07 12.9167 1.78814e-07 12.5V3.5C1.78814e-07 3.08333 0.145833 2.72917 0.4375 2.4375C0.729167 2.14583 1.08333 2 1.5 2H14.5C14.9167 2 15.2708 2.14583 15.5625 2.4375C15.8542 2.72917 16 3.08333 16 3.5V8H14.5V3.5H1.5V12.5H10V14H1.5Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg></button
+            ><button id="close-button" class="">
+              <svg
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.167368 0.167368C0.390524 -0.0557892 0.752333 -0.0557892 0.97549 0.167368L4 3.19188L7.02451 0.167368C7.24767 -0.0557892 7.60948 -0.0557892 7.83263 0.167368C8.05579 0.390524 8.05579 0.752333 7.83263 0.97549L4.80812 4L7.83263 7.02451C8.05579 7.24767 8.05579 7.60948 7.83263 7.83263C7.60948 8.05579 7.24767 8.05579 7.02451 7.83263L4 4.80812L0.97549 7.83263C0.752333 8.05579 0.390524 8.05579 0.167368 7.83263C-0.0557892 7.60948 -0.0557892 7.24767 0.167368 7.02451L3.19188 4L0.167368 0.97549C-0.0557892 0.752333 -0.0557892 0.390524 0.167368 0.167368Z"
+                  fill="#E3E3E3"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="test-rule-container">
+          <div id="implicit-widget-container">
+            <div id="applied-rules-list-header">Rules applied on this page</div>
+            <div id="applied-rules-list"></div>
+            <div class="test-rule-widget-progress-bar"></div>
+          </div>
+        </div>
+        <div id="info-container" class="hidden">
+          <div id="info-icon" class="secondary-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 7H13V9H11V7ZM11 11H13V17H11V11Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <div id="info-text" class="secondary-text"></div>
+        </div>
+      </div> </template
+  ></rq-implicit-test-rule-widget>
+</html>
